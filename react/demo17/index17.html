@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Body mass index</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+      <h2>Calculating body mass index</h2>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        class BMI extends React.Component {
+          constructor(props){
+            super(props);
+            this.state = {
+              height: 0,
+              weight: 0,
+              bmi: 0
+            }
+          }
+
+            
+            
+            handleChange = (event) => {
+                this.setState({[event.target.name]:event.target.value});
+            }
+
+            handleSubmit = (event) => {
+                const {height, weight} = this.state;
+                const result = weight / (height * height);
+                this.setState({bmi: result});
+                event.preventDefault();
+            }
+
+            render() {
+                const {height, weight, bmi} = this.state;
+                return ( 
+                    <>
+                    <h3>BMI</h3>
+                    <form onSubmit = {this.handleSubmit}>
+                        <div>
+                            <label>Height</label>
+                            <input value= {height} name ="height" onChange={this.handleChange} type="number" step ="0.01" />
+                            </div>
+                            <div>
+                            <label>Weight</label>
+                            <input value= {weight} name ="weight" onChange={this.handleChange} type="number" step ="1" /> 
+                        </div>
+                        <div>
+                            <label>BMI</label>
+                            <output>{bmi.toFixed(1)}</output>
+                            </div>
+                            <button>Laske</button>
+                            </form>
+                                </>
+                )
+                            }
+                        }
+
+    
+
+
+
+      ReactDOM.render(
+        <BMI />,
+        document.getElementById('root')
+      );
+
+    </script>
+  </body>
+</html>

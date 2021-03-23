@@ -1,0 +1,202 @@
+/*
+
+
+h1:#110934;
+h2:#29157E;
+h3:#4424D6;
+*/
+body {
+    background-color: #bfbfbf;
+}
+
+header,
+nav,
+div {
+    background-color: snow;
+    max-width: 960px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px 20px 20px;
+    font-family: Arial;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #110934;
+}
+
+h2 {
+    
+    color: #29157E;
+}
+
+h3 {
+    color: #4424D6;
+}
+
+table {
+  
+   border: #29157E;
+   border-width: 3px;
+   border-style: solid;
+   text-align: left;
+   vertical-align: top;
+   border-collapse: separate; 
+   
+}
+   
+   
+   
+   th{
+  
+  border-color: #4424D6;
+  color: #110934;
+  background-color: #E5E0FA;
+  border-style: solid;
+  border-width: 1px;
+  
+}
+
+   
+td {
+    border-style: solid;
+    
+}
+
+
+figure {
+     margin-left: 0px
+    
+}
+        
+
+img {
+    max-width: 100%;
+     
+}
+        
+
+.tyyli {
+    
+    font-family: Georgia;
+    font-style: italic;
+    color: #4424D6;
+}
+    
+
+
+.tausta {
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.väri1 {
+    background-color: #bfbfbf; 
+}
+
+
+.väri2 {
+    background-color: #4424D6;
+}
+
+adress {
+    text-align: right;
+    
+}
+
+a {
+    text-decoration: none;
+    color:#133863;
+    font-weight: bold;
+    
+}
+
+a:visited {
+    text-decoration: none;
+    color:#133863;
+    font-weight: bold;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: #4424D6;
+}
+
+.list {
+    border: 1px solid #4424D6;
+    display: inline-block;
+    padding: 0px;
+    height: 250px;
+    width: 250px;
+    vertical-align: top;
+    margin-right: 20px;
+    
+}
+
+.list h3 {
+    background-color: #E5E0FA;
+    margin-top: 0px;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 10px 10px 10px 0px;
+    
+}
+
+.list ul ul {
+    padding-left: 20px;
+}
+
+nav,
+header{
+    margin-bottom: 1em;
+    padding: 10px 10px 10px 20px;
+    background-color: #E5E0FA;    
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    background-color: #E5E0FA;
+    line-height: 2em;
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+nav ul {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li a:hover {
+    background-color: #E5E0FA;
+    color: #29157E;
+    text-decoration: none;
+
+}
+
+.images {
+    padding: 0px;
+    margin: 0px;
+}
+
+.images li {
+    display: inline-block;
+    width: 20%;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    
+    
+}
+
+.imgages li img {
+    border: #29157E solid 3px;
+    border-radius: 10px;
+}

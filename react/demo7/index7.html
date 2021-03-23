@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multiple components</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+    function Greeting(props) {
+        return <h4>Hello {props.name}</h4>
+    }
+
+    function App() {
+        return (
+            <div>
+                <Greeting name="Erkki" />
+                <Greeting name="Esko" />
+                <Greeting name="Erno" />
+                </div>
+        )
+    }
+      ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+  </body>
+</html>

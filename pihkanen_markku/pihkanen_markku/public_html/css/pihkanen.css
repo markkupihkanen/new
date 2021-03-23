@@ -1,0 +1,282 @@
+/*
+1.#091034
+2.#0A2299
+3.#183BF0
+4.#798EF6
+5.#DDE3FD
+
+Colors used in exercise
+*/
+
+
+/*
+div, header, footer, article, nav, h1 and h2 were used in every page.
+*/
+
+div {
+    border: #1B1145 solid;
+    background-color: #DDE3FD
+}
+
+header,
+div,
+footer{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+    border-radius: 10px;
+    line-height: 2;
+    
+}
+
+article {
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #DDE3FD
+}
+
+
+nav{
+    padding: 10px 10px 10px 10px;
+    background-color: #798EF6;
+}
+
+header {
+    padding: 10px 10px 10px 10px;
+}
+
+footer {
+    border: 1px solid #4424D6;
+    height: 100px;
+    width: 800px;
+    margin-top: 2em; 
+    margin-bottom: 1em;
+    
+}
+
+footer div {
+    display: inline-block;
+    width: 40%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 3em;
+    margin-top: 0.8em;
+    height: 50px;
+    vertical-align: top;
+    line-height: 1;
+    
+}
+
+h1 {
+    color: #091034;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+h2 {
+    
+    color: #0A2299;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+/*
+class text was used in the openning page for text that was next to picture.
+*/
+
+
+.text{
+    display: inline-block;
+    border: 1px solid;
+    margin-left: 1em;
+    margin-top: 10em;
+    padding: 0px 30px 30px 30px;
+    line-height: 30px;
+    background-color: #798EF6;
+    color: #DDE3FD;
+        
+}
+
+/*
+Address element was used for the sources on Study page.
+*/
+
+address {
+    margin-bottom: 2em;
+}
+
+/*
+h3 was used as head-text for the table in the Studies page. Table elements were 
+used in the same page.
+*/
+
+h3 {
+    color: #183BF0;
+}
+
+
+
+table {
+   border-width: 3px;
+   border-style: solid;
+   text-align: left;
+   vertical-align: top;
+   margin-top: 1em;
+   margin-left: 1em;
+}
+
+   
+  td{
+  
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 1em;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  color: white;
+  min-width: 2em;
+}
+
+tr:nth-child(even){
+    background-color: #091034;
+}
+
+tr:nth-child(odd){
+    background-color: #0A2299;
+}
+ 
+/*
+Lists were used in the Leisure page. 
+*/
+
+nav li {
+    display: inline-block;
+}
+
+
+nav li:hover {
+    opacity: 1;
+}
+
+
+.list {
+    border: 1px solid #091034;
+    display: inline-block;
+    padding: 0px;
+    height: 200px;
+    width: 250px;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.list h3 {
+    background-color: #0A2299;
+    color:snow;
+    margin-top: 0px;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 10px 10px 10px 0px;
+    
+}
+
+.list ul li {
+    padding-left: 20px;
+}
+
+/*
+Pictures, images and figcaption were used in images page.
+*/
+
+
+.picture {
+  
+display: inline-block;    
+text-align: left;
+height: 400px;
+vertical-align: top;
+
+}  
+
+img { 
+    max-width: 100%;
+    margin-top: 4em;
+    margin-left: 2em;
+}
+
+figcaption {
+    margin-left: 2em;
+}
+
+
+.images {
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+.images li {
+    display: inline-block;
+    width: 20%;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    
+}
+
+.images li img {
+    border: #0A2299 solid 5px;
+    text-align:center;
+}
+
+.images li:hover .overlay
+{
+    opacity: 1;
+}
+
+/*
+Labels, painikkeet, overlay and contact were used for Contact page.
+*/
+
+
+label{
+    margin-left: 3em;
+  
+}
+
+label[for]{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    
+}
+
+div.painikkeet {
+    margin-left: 6em;
+    margin-top: 2em;
+    padding: 10px 10px 10px 10px;
+    width: 7em;
+}
+
+.overlay {
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .5s ease;
+    opacity: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-left: 2em;
+}
+
+.contact{
+    margin-left: 1em;
+    line-height: 3;
+    
+}

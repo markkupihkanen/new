@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Markku Pihkanen">
+        <link href="css/css-reset.css" rel="stylesheet" type="text/css"/>
+        <link href="css/pihkanen.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1>Studying front-end-developing</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Me</a></li>
+                    <li><a href="highway-to-code-MP.html">Studies</a></li>
+                    <li><a href="off-studies-MP.html">Leisure</a></li>
+                    <li><a href="images-MP.html">Images</a></li>
+                    <li><a href="form-MP.html">Contact</a></li>
+                </ul>
+            </nav>
+            <article class="contact">
+                <form onsubmit="contact()">
+                    <h2>Contact me</h2>
+                    <p>Markku Pihkanen</p>
+                    <p>c9pima01@students.oamk.fi</p>
+                    <p>What is the matter?</p>
+                    <label><input type="radio" name="broken" value="1">Machine is broken!</label>
+                    <label><input type="radio" name="start" value="2">Machine wont start!</label>
+                    <label><input type="radio" name="update" value="3">Machine needs updates!</label>
+
+                    <p>How do you want to be contacted?</p>
+                    <label><input type="checkbox" name="option1" value="e-mail" checked> e-mail</label>
+                    <label><input type="checkbox" name="option2" value="start" checked> telephone</label>
+                    <label for="Number">Telephone Number: </label>
+                    <input type="text" id="Number" maxlength="30" size="10">
+                </form>
+                <form>
+                    <label for="subject">Subject of the message: </label>
+                    <input type="text" id="subject" maxlength="30" size="10">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message"></textarea>
+                    <div class="painikkeet">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </article>
+            <footer>
+                <div>
+                    <p>Markku Pihkanen</p> 
+                    <p>2020</p>
+                </div>
+                <div>
+                    <p>Final project</p>
+                    <p>Highway to code</p>
+                    <p>html and css source</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
